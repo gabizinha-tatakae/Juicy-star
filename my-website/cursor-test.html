@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Animated Cursor Demo</title>
+  <style>
+    /* Hide the default cursor */
+    body {
+      cursor: none;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* Custom animated cursor */
+    #custom-cursor {
+      position: fixed;
+      width: 48px;
+      height: 48px;
+      pointer-events: none; /* Allow clicks to pass through */
+      background: url('https://files.catbox.moe/2umxu1.gif') no-repeat center center;
+      background-size: contain;
+      z-index: 9999;
+      transform: translate(-50%, -50%); /* Center the cursor image */
+    }
+  </style>
+</head>
+<body>
+  <div id="custom-cursor"></div>
+  <h1>Hover around to see the animated cursor!</h1>
+
+  <script>
+    const cursor = document.getElementById('custom-cursor');
+
+    document.addEventListener('mousemove', e => {
+      cursor.style.left = `${e.clientX}px`;
+      cursor.style.top = `${e.clientY}px`;
+    });
+  </script>
+</body>
+</html>

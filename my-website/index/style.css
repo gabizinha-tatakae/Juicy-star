@@ -1,0 +1,486 @@
+/*Change cursor*/
+* {
+cursor: url('https://files.catbox.moe/ya4jpg.gif') 0 0, auto;
+}
+/*Change image scale when hover*/
+.stamps img:hover, .status img:hover, .buttons img:hover{
+transform: scale(1.2);
+transition: all 0.3s ease-in-out;
+}
+/*Change selector style*/
+::selection{
+color:rgb(248, 199, 255);
+background-color:rgba(255, 105, 180, 0.822);
+text-shadow: 0 0 5px pink;
+}
+/**::-webkit-scrollbar {
+    width: 12px;
+}
+*::-webkit-scrollbar-track {
+    background: rgba(29, 30, 31, 0.2);
+}
+*::-webkit-scrollbar-thumb {
+    background-color: #52c49e;
+    border: 3px outset #34bd8f;
+    border-radius: 3px;
+}*/
+*{
+    box-sizing: border-box;
+}
+/*Costom scrollbar*/
+::-webkit-scrollbar {
+width: 12px;
+height: 12px;
+}
+
+::-webkit-scrollbar-track {
+background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAIAAAD91JpzAAAAFElEQVQIW2M4fPz0////GYAYyAIASnoKpV3w4kgAAAAASUVORK5CYII=");
+image-rendering: pixelated;
+-webkit-filter: grayscale(100%);
+-moz-filter: grayscale(100%);
+-ms-filter: grayscale(100%);
+-o-filter: grayscale(100%);
+filter: grayscale(100%);
+}
+
+::-webkit-scrollbar-track:active {
+background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAIAAAD91JpzAAAAEElEQVQIW2No6+pjgAAgCwAWogM9VKrgGQAAAABJRU5ErkJggg==");
+-webkit-filter: grayscale(100%);
+-moz-filter: grayscale(100%);
+-ms-filter: grayscale(100%);
+-o-filter: grayscale(100%);
+filter: grayscale(100%);
+}
+
+::-webkit-scrollbar-thumb {
+border-top: 1px solid #cccccc;
+border-left: 1px solid #cccccc;
+border-right: 1px solid black;
+border-bottom: 1px solid black;
+box-shadow: inset 1px 1px 0 0 white, inset -1px -1px 0 0 #868a8e;
+width: 16px;
+height: 16px;
+background-color: #cccccc;
+z-index: 1;
+}
+
+::-webkit-scrollbar-corner {
+background-color: #cccccc;
+}
+
+::-webkit-resizer {
+width: 16px;
+height: 16px;
+background-color: #cccccc;
+background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAN0lEQVR4Ae3MgQUAMBRDwU5fFF05lb/CARTBw2Ulof0DxPtcwp3hNuEYnjbcEW4TjuFpwx3h9gMWGgZ2Y/PT2gAAAABJRU5ErkJggg==");
+background-position: bottom right;
+background-repeat: no-repeat;
+image-rendering: pixelated;
+}
+
+::-webkit-scrollbar-button,
+.scroll::-webkit-scrollbar-button {
+border-top: 1px solid #cccccc;
+border-left: 1px solid #cccccc;
+border-right: 1px solid black;
+border-bottom: 1px solid black;
+box-shadow: inset 1px 1px 0 0 white, inset -1px -1px 0 0 #868a8e;
+display: block;
+width: 16px;
+height: 16px;
+background-color: #cccccc;
+image-rendering: pixelated;
+background-repeat: no-repeat;
+background-position: center center;
+}
+
+::-webkit-scrollbar-button:active,
+.scroll::-webkit-scrollbar-button:active {
+background-position: 2px 2px;
+}
+
+::-webkit-scrollbar-button:horizontal:decrement,
+.scroll::-webkit-scrollbar-button:horizontal:decrement {
+background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAAHklEQVQY02NgoBT8xyX8H5fwf1zCpOjAYwceV1EEAAO2D/HsQ4vsAAAAAElFTkSuQmCC");
+}
+
+::-webkit-scrollbar-button:horizontal:increment,
+.scroll::-webkit-scrollbar-button:horizontal:increment {
+background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAAHUlEQVQY02NgIB/8xy3xH7fEf9wS/0nUQZqrKAYAK44P8ZRmzLQAAAAASUVORK5CYII=");
+}
+
+::-webkit-scrollbar-button:vertical:decrement,
+.scroll::-webkit-scrollbar-button:vertical:decrement {
+background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGklEQVR4AWMYxuA/SYphmETFhDX9x4mHGQAAcL4P8dQiMq8AAAAASUVORK5CYII=");
+}
+
+::-webkit-scrollbar-button:vertical:increment,
+.scroll::-webkit-scrollbar-button:vertical:increment {
+background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAAF0lEQVQY02NgoBf4jwJxSOHQhcNAOgMAWWAP8Rv2U3UAAAAASUVORK5CYII=");
+}
+
+::-webkit-scrollbar-button:horizontal:increment:start,
+.scroll::-webkit-scrollbar-button:horizontal:increment:start {
+display: none;
+}
+
+::-webkit-scrollbar-button:horizontal:decrement:end,
+.scroll::-webkit-scrollbar-button:horizontal:decrement:end {
+display: none;
+}
+
+::-webkit-scrollbar-button:vertical:increment:start,
+.scroll::-webkit-scrollbar-button:vertical:increment:start {
+display: none;
+}
+
+::-webkit-scrollbar-button:vertical:decrement:end,
+.scroll::-webkit-scrollbar-button:vertical:decrement:end {
+display: none;
+}
+
+::-webkit-scrollbar-button:active,
+.scroll::-webkit-scrollbar-button:active {
+border-top: 1px solid #868a8e;
+border-left: 1px solid #868a8e;
+border-bottom: 1px solid #868a8e;
+border-right: 1px solid #868a8e;
+box-shadow: none;
+}
+            
+/*Page body and title style*/
+body, #head{
+    image-rendering:pixelated;
+}
+#head{
+    width: 350px;
+}
+[title~="my"]{
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+body{
+    background-color: black;
+    background-image: url(/index/images/strbackground.gif);
+    background-size: 350px;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    font-family: "brush script mt", "lucida handwriting", cursive;
+}
+/*header, footer and main body styling*/
+.topnav, .footer, .content{
+    background-color:rgba(186, 85, 211, 0.8);
+    color: #ff8fff;
+    width: calc(100% - 100px);
+    max-width: 1100px;
+    border: 4px groove #b624e2;
+    margin: 10px auto;
+    font-size: 15px;
+    text-align: center;
+}
+.footer a{
+    color: #ff8fff;
+    text-decoration: none;
+}
+.footer a:hover{
+    cursor: pointer;
+    text-decoration: wavy underline;
+    font-style: oblique;
+}
+/*Top navigation customization*/
+.topnav{
+    overflow: hidden;
+    border-radius: 50px 50px 1px 1px;
+    font-size: 17px;
+    text-align: left;
+}
+.topnav a{
+    display: inline-block;
+    color:#ff8fff;
+    padding: 10px 56.9px;
+    text-decoration: none;
+}
+.topnav a:hover{
+    background-color:mistyrose;
+    color: hotpink;
+    font-size: 18px;
+    transition: all 0.3s ease-out;
+}
+.topnav a:active{
+    background-color: #dbc5c2;
+    color: #dd5b9c;
+    font-size: 17px;
+}
+/*Page footer customization*/
+.footer{
+    padding: 10px;
+    border-radius: 4px 4px 70px 70px;
+}
+/*Main container*/
+.content{
+    overflow: auto;
+    padding: 10px;
+    border-radius: 9px;
+}
+/*Left container inside the main container*/
+.content-left, .nav, #to-do, .tamaNOTchi{
+    float: left;
+    width: 240px;
+}
+/*Right container inside the main container*/
+.content-right, .updates, .status, #myart{
+    float: right;
+    width: 240px;
+}
+/*Middle container...well you got it*/
+.content-middle{
+    display: inline-block;
+    width: calc(100% - 50px);
+    max-width: 545px;
+}
+/*Common shared customization*/
+.presentation, .nav, .updates, .status, .buttons, .stamps, .webring , #to-do, .tamaNOTchi, #myart, .cliques, iframe{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background: rgba(0, 0, 0, 0.8);
+    color: #e080e0;
+    outline: 4px ridge #b99227;
+    margin: 10px;
+    font-size: 15px;
+    box-shadow: 7px 8px 15px #522053;
+    border-radius: 7px;
+    text-align: left;
+}
+/*Middle section of the main frame customization*/
+.presentation, .buttons, .tamaNOTchi, #to-do, #myart, .cliques{
+    overflow: hidden;
+}
+.presentation{
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.8) url(/index/images/Background064.gif) repeat border-box;
+    background-size: cover;
+    border: 18px solid transparent;
+    border-image: url(/index/images/littlestar.gif) 30 round;
+}
+.presentation p{
+    float: left;
+    color: #cf28cf;
+    width: 300px;
+    text-indent: 10px;
+}
+#disclaimer{
+    display: none;
+}
+#more{
+    color: #790a9b;
+    background-image: linear-gradient(rgb(255, 192, 231), rgb(218, 64, 218));
+    border: 2px outset rgb(243, 122, 142);
+    border-radius: 9px;
+}
+#more:active{
+    border: 2px inset rgb(253, 93, 160);
+}
+#wipe{
+    display:inline;             
+}
+.buttons{
+    padding-top: 5px;
+}
+.buttons a img{
+    cursor: pointer;
+}
+iframe{
+    float: left;
+}
+.stamps{
+    display: inline-block;
+    width: 322px;
+    height: 320px;
+}
+.cliques{
+    float: left;
+    background-image: repeating-radial-gradient(rgba(84, 26, 131, 0.637) 1%, rgb(94, 26, 107) 15%);
+    background-size: 500px;
+    width: 190px;
+    height: 320px;
+    padding: 10px;
+}
+.cliques a{
+    color: #dd50be;
+}
+/*Customization of both right and left sides*/
+h3{
+    text-align: center;
+    display: inline;
+    padding: 0px 0px 0px 35px;
+    position: relative;
+    transition: clip-path 275ms ease;
+}
+
+h3:hover span::before, .link:focus span::before {
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+h3 span {
+position: relative;
+display: inline-block;
+}
+h3 span::before {
+position: absolute;
+content: attr(data-content);
+text-decoration: underline;
+clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+transition: clip-path 275ms ease;
+}
+.nav, .updates{
+    height: 310px;
+}
+.status{
+    height: 335px;
+}
+/*Customization of the left side*/
+.nav button{
+    display: grid; /*Not so sure why I put this but...yk*/
+    list-style: none;
+    background-image: linear-gradient(rgb(233, 151, 229), rgb(221, 57, 194));
+    width: 233px;
+    border:2px outset #dd50be;
+    font-size: 14px;
+    text-align:left;
+}
+.nav button:active{
+    border: 2px inset #dd50be;
+}
+.nav li, .nav a{
+    color: #7debeb;
+    padding: 10px;
+    text-decoration: none;
+}
+.nav li:hover, .nav a:hover{
+    list-style-image: url(/index/images/pixel.gif);
+    color: ghostwhite;
+    text-shadow: 0px 0px 5px #b3ff00;
+    transition: all 0.3s ease-out;
+}
+.nav li:active, .nav a:active{
+    color:gold;
+    font-size: 13px;
+    transition: all 0.3s ease-out;
+}
+#to-do li{
+    padding: 15px;
+}
+#to-do li:hover{
+    background-color: #522053;
+    color: white;
+    text-shadow: 2px 2px 1px black;
+}
+li::marker{
+    color:darkorchid;
+}
+.tamaNOTchi{
+    background-image: url(/index/images/437.GIF);
+    background-size: 120px;
+    display: inline-block;
+    padding: 8px;
+    text-align: center;
+}
+.tamaNOTchi img{
+    margin: 8px;
+}
+/*Customization of the right side*/
+.updates, .status, #myart{
+    float: right;
+}
+.updates{
+    background-image: repeating-radial-gradient(rgba(0, 255, 98, 0.3)1%, rgba(119, 0, 255, 0.3)1%, rgba(0, 128, 128, 0.3)8%);
+    padding: 15px;
+}
+.updates hr{
+    border: 1px dashed rgb(147, 95, 190);
+}
+.status{
+    background-image: url(/index/images/553.GIF);
+    padding: 10px;
+}
+#statuscafe{
+    color: rgb(70, 32, 238);
+    padding: .5em;
+    background-image: linear-gradient(rgb(174, 255, 225), rgb(75, 206, 206), rgb(57, 147, 231));
+    border: 4px groove rgb(71, 71, 255);
+    border-radius: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#statuscafe-username a{
+    color: rgb(255, 18, 255);
+    margin-bottom: .5em;
+}
+#statuscafe-content{
+    margin: 0 1em 0.5em 1em;
+}
+table{ /*For the current moon thing*/
+    display: block;
+    margin: auto;
+}
+#myart{
+    height: 359px;
+}
+#myart img{
+    width: 240px;
+    height: 465px;
+    object-fit: cover;
+    object-position: -70px -50px;
+    image-rendering: optimizeQuality;
+}
+#window1{
+    position: absolute;
+    top: 290px;
+    left: 130px;
+    z-index: 0;
+    cursor: pointer;
+}
+#statue{
+    position: absolute;
+    bottom: -420px;
+    right: 130px;
+    z-index: 1;
+    cursor: pointer;
+}
+#window2{
+    position: absolute;
+    bottom: -150px;
+    right: 130px;
+    z-index: 1;
+    cursor: pointer;
+}
+#window3{
+    position: absolute;
+    top: 430px;
+    left: 20px;
+    z-index: 1;
+    cursor: pointer;
+}
+#pc{
+    position: absolute;
+    top: 430px;
+    right: 90px;
+    z-index: -1;
+}
+#moon{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 120px;
+}
+#robot{
+    position: absolute;
+    bottom: -425px;
+    width: 170px;
+}
+
+@media screen and (max-width: 1000px) {
+    div.hide {
+        display: none;
+    }
+}

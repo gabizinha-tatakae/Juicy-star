@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Juicy Star</title>
+        <meta charset="utf-8"/>
+        <meta name="autor" content="Alnilam"/>
+        <meta name="description" content="My website landing page"/>
+        <link rel="icon" type="image/x-icon" href="index/images/favicon-spiral.ico">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href="index/cube-style.css">
+        <link rel="stylesheet" href="index/style.css">
+        <script src="index/text-effects.js"></script>
+        <style>
+            body{
+                background-color: black;
+                background:black url(index/images/strbackground.gif);
+                background-size: 410px;
+                image-rendering: pixelated;
+            }
+            .rainbow1 {
+                color: #0000;
+                background-clip: text;
+                font-size: 35px;
+                font-family: Arial Black, Gadget, sans-serif;
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: #FF0000;
+                animation: animatedBackground_c 2s infinite alternate;
+                text-align: center;
+                font-size: 90px;
+                text-shadow: 0 -1px 0 #fff, 0 1px 0 #95449c, 0 2px 0 #904297, 0 3px 0 #904297, 0 4px 0 #904297, 0 5px 0 #904297, 0 6px 0 #904297, 0 7px 0 #904297, 0 8px 0 #904297, 0 9px 0 #904297, 0 10px 0 #904297, 0 11px 0 #904297, 0 12px 0 #904297, 0 13px 0 #904297, 0 14px 0 #904297, 0 15px 0 #904297, 0 22px 30px rgba(0,0,0,0.9), 2px 2px 2px rgba(48,236,255,0);
+            }
+            @keyframes animatedBackground_c {
+                0% {-webkit-text-stroke-color: #FFA53A}
+                10% {-webkit-text-stroke-color: #FFE53A}
+                20% {-webkit-text-stroke-color: #E8FF3A}
+                30% {-webkit-text-stroke-color: #A5FF3A}
+                40% {-webkit-text-stroke-color: #3AFF4E}
+                50% {-webkit-text-stroke-color: #3AFFAE}
+                60% {-webkit-text-stroke-color: #3AF3FF}
+                70% {-webkit-text-stroke-color: #3AA2FF}
+                80% {-webkit-text-stroke-color: #4B3AFF}
+                90% {-webkit-text-stroke-color: #B43AFF}
+                100% {-webkit-text-stroke-color: #FF3AEE}
+            }
+            div{
+                display: block;
+                width: 300px;
+                margin: auto;
+            }
+            #frame1{
+                position: fixed;
+                top: 300px;
+                left: 250px;
+                width: 180px;
+                z-index: 1;
+            }
+            #frame2{
+                position: fixed;
+                top: 150px;
+                left: 160px;
+                width: 180px;
+            }
+            #frame3{
+                position: fixed;
+                top: 300px;
+                right: 200px;
+                width: 180px;
+            }
+            #peace{
+                position: fixed;
+                top: 440px;
+                right: 330px;
+                width: 170px;
+                height: 160px;
+                image-rendering: pixelated;
+            }
+            #skull{
+                position: fixed;
+                bottom: 470px;
+                right: 145px;
+                width: 100px;
+                z-index: 1;
+                image-rendering: pixelated;
+            }
+            #hand{
+                position: fixed;
+                bottom: 90px;
+                left: 100px;
+                width: 250px;
+            }
+            #eyeball{
+                position: fixed;
+                bottom: 380px;
+                left: 165px;
+                width: 150px;
+                z-index: 1;
+            }
+            @media screen and (max-width: 1000px) {
+                div.hide {
+                    display: none;
+                }
+            }
+            #badge{
+                position: relative;
+                display: flex;
+                width: 90px;
+                height: 100px;
+                margin: auto;
+                bottom: -450px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 id="wobble" class="rainbow1">Juicy Star</h1>
+            <p id="news" style="color: white; text-align: center;"></p>
+        </header>
+
+        <br><br>
+        <main>
+            <a href="inner-index.html">
+                <div class="cube-container">
+                    <div class="cube">
+                        <div class="cube-side"></div>
+                        <div class="cube-side"></div>
+                        <div class="cube-side"></div>
+                        <div class="cube-side"></div>
+                        <div class="cube-side"></div>
+                        <div class="cube-side"></div>
+                    </div>
+                </div>
+            </a>
+
+            <div class="hide">
+                <a href="https://www.deviantart.com/kouenli/art/Tv-Window-680443730">
+                <img id="frame1" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5552cb82-6fb8-4c7f-9d29-a10b2e5daf6c/db949qq-34f80102-37a6-44c3-b900-cfd7a8f0e53f.png/v1/fill/w_100,h_100,q_80,strp/tv_window_by_kouenli_db949qq-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAwIiwicGF0aCI6IlwvZlwvNTU1MmNiODItNmZiOC00YzdmLTlkMjktYTEwYjJlNWRhZjZjXC9kYjk0OXFxLTM0ZjgwMTAyLTM3YTYtNDRjMy1iOTAwLWNmZDdhOGYwZTUzZi5wbmciLCJ3aWR0aCI6Ijw9MTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.hc4qWxSCxecRS4XS3dR0KKvgv4C1Eh_oIgqW82joRe0">
+                </a>
+
+                <a href="https://www.deviantart.com/kouenli/art/Desktop-Invaders-649450817">
+                    <img id="frame2" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5552cb82-6fb8-4c7f-9d29-a10b2e5daf6c/daqnzgh-f20409ee-1574-42c8-a64f-045a6134b584.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzU1NTJjYjgyLTZmYjgtNGM3Zi05ZDI5LWExMGIyZTVkYWY2Y1wvZGFxbnpnaC1mMjA0MDllZS0xNTc0LTQyYzgtYTY0Zi0wNDVhNjEzNGI1ODQuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.32lbylbllRo1aALdG1KwUN2VUXxwXamY-OFOCBLZZ84">
+                </a>
+
+                <a href="https://www.deviantart.com/kouenli/art/Underwater-Screensaver-Window-698386658">
+                    <img id="frame3" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5552cb82-6fb8-4c7f-9d29-a10b2e5daf6c/dbjsule-f6acbc63-4b66-450b-9ab2-622f1394d59c.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzU1NTJjYjgyLTZmYjgtNGM3Zi05ZDI5LWExMGIyZTVkYWY2Y1wvZGJqc3VsZS1mNmFjYmM2My00YjY2LTQ1MGItOWFiMi02MjJmMTM5NGQ1OWMuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.n9qiVMcngcemh8FnTh_SvL4dpjuxnnPiToMStV_sbZI">
+                </a>
+
+                <img id="peace" src="https://www.gifs-paradise.com/animations/animated-gifs-yin-yang-22.gif.pagespeed.ce.dz4-lp5E12.gif">
+
+                <img id="skull" src="https://www.gifs-paradise.com/animations/animated-gifs-skulls-75.gif.pagespeed.ce.JDHQW3VNxn.gif">
+
+                <img id="hand" src="https://www.gifs-paradise.com/animations/animated-gifs-hands-06.gif.pagespeed.ce.1i0JQHtpIy.gif">
+
+                <img id="eyeball" src="https://www.gifs-paradise.com/animations/animated-gifs-eyes-004.gif.pagespeed.ce.0fe50kSOcu.gif">
+            </div>
+        </main>
+        
+        <footer>
+            <div class="myfooter">
+                <img id="badge" src="https://troy-sucks.neocities.org/images/webby_badge.gif">                
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
