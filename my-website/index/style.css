@@ -1,4 +1,3 @@
-/*Change cursor*/
 body {
 cursor: url('https://files.catbox.moe/ya4jpg.gif') 0 0, auto;
 }
@@ -162,7 +161,7 @@ body, #head{
 }
 body{
     background-color: black;
-    background-image: url(/my-website/index/images/strbackground.gif);
+    background-image: url(/index/images/strbackground.gif);
     background-size: 350px;
     background-repeat: repeat;
     background-attachment: fixed;
@@ -264,11 +263,11 @@ button{
 }
 .presentation{
     display: inline-block;
-    background: rgba(0, 0, 0, 0.8) url(/my-website/index/images/Background064.gif) repeat border-box;
+    background: rgba(0, 0, 0, 0.8) url(/index/images/Background064.gif) repeat border-box;
     background-size: cover;
     width: calc(100% - 100);
     border: 18px solid transparent;
-    border-image: url(/my-website/index/images/littlestar.gif) 30 round;
+    border-image: url(/index/images/littlestar.gif) 30 round;
 }
 .presentation p{
     float: left;
@@ -361,7 +360,7 @@ transition: clip-path 275ms ease;
     text-decoration: none;
 }
 .nav li:hover, .nav a:hover{
-    list-style-image: url(/my-website/index/images/small/pixel.gif);
+    list-style-image: url(/index/images/small/pixel.gif);
     color: ghostwhite;
     text-shadow: 0px 0px 5px #b3ff00;
     transition: all 0.3s ease-out;
@@ -383,7 +382,7 @@ li::marker{
     color:darkorchid;
 }
 .tamaNOTchi{
-    background-image: url(/my-website/index/images/437.GIF);
+    background-image: url(/index/images/437.GIF);
     background-size: 120px;
     display: inline-block;
     padding: 8px;
@@ -404,24 +403,15 @@ li::marker{
     border: 1px dashed rgb(147, 95, 190);
 }
 .status{
-    background-image: url(/my-website/index/images/553.GIF);
+    background-image: url(/index/images/553.GIF);
     padding: 10px;
 }
 #statuscafe{
     color: rgb(70, 32, 238);
     padding: .5em;
-    background-image: linear-gradient(rgb(174, 255, 225), rgb(75, 206, 206), rgb(57, 147, 231));
-    border: 4px groove rgb(71, 71, 255);
     border-radius: 12px;
     margin-top: 5px;
     margin-bottom: 5px;
-}
-#statuscafe-username a{
-    color: rgb(255, 18, 255);
-    margin-bottom: .5em;
-}
-#statuscafe-content{
-    margin: 0 1em 0.5em 1em;
 }
 table{ /*For the current moon thing*/
     display: block;
