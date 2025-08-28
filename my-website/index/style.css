@@ -1,5 +1,5 @@
 /*Change cursor*/
-* {
+body {
 cursor: url('https://files.catbox.moe/ya4jpg.gif') 0 0, auto;
 }
 /*Change image scale when hover*/
@@ -239,19 +239,25 @@ button{
     width: 240px;
 }
 /*Middle container...well you got it*/
-.content-middle{
+.content-middle, .main{
     display: inline-block;
-    width: calc(100% - 50px);
+    width: 100%;
     max-width: 545px;
+    
+}
+.main{
+    overflow:visible;
+    height: 72em;
+    
 }
 /*Common shared customization*/
-.presentation, .nav, .updates, .status, .buttons, .stamps, .webring , #to-do, .tamaNOTchi, #myart, .cliques, iframe{
+.presentation, .nav, .updates, .status, .buttons, .stamps, .webring , #to-do, .tamaNOTchi, #myart, .cliques, #gifypet{
     overflow-y: scroll;
     overflow-x: hidden;
     background: rgba(0, 0, 0, 0.8);
     color: #e080e0;
     outline: 4px ridge #b99227;
-    margin: 10px;
+    margin: 10px auto;
     font-size: 15px;
     box-shadow: 7px 8px 15px #522053;
     border-radius: 7px;
@@ -265,6 +271,7 @@ button{
     display: inline-block;
     background: rgba(0, 0, 0, 0.8) url(/my-website/index/images/Background064.gif) repeat border-box;
     background-size: cover;
+    width: calc(100% - 100);
     border: 18px solid transparent;
     border-image: url(/my-website/index/images/littlestar.gif) 30 round;
 }
@@ -289,13 +296,10 @@ button{
 #wipe{
     display:inline;             
 }
-.buttons{
-    padding-top: 5px;
-}
 .buttons a img{
     cursor: pointer;
 }
-iframe{
+#gifypet{
     float: left;
 }
 .stamps{
@@ -304,7 +308,7 @@ iframe{
     height: 320px;
 }
 .cliques{
-    float: left;
+    float: right;
     background-image: repeating-radial-gradient(rgba(84, 26, 131, 0.637) 1%, rgb(94, 26, 107) 15%);
     background-size: 500px;
     width: 190px;
@@ -312,7 +316,7 @@ iframe{
     padding: 10px;
 }
 .cliques a{
-    color: #dd50be;
+    color: #ff7fe3;
 }
 /*Customization of both right and left sides*/
 h3{
@@ -362,7 +366,7 @@ transition: clip-path 275ms ease;
     text-decoration: none;
 }
 .nav li:hover, .nav a:hover{
-    list-style-image: url(/my-website/index/images/pixel.gif);
+    list-style-image: url(/my-website/index/images/small/pixel.gif);
     color: ghostwhite;
     text-shadow: 0px 0px 5px #b3ff00;
     transition: all 0.3s ease-out;
