@@ -239,15 +239,10 @@ button{
     width: 240px;
 }
 /*Middle container...well you got it*/
-.content-middle, .main{
+.content-middle{
     display: inline-block;
     width: 100%;
     max-width: 545px;
-    
-}
-.main{
-    overflow:visible;
-    height: 72em;
     
 }
 /*Common shared customization*/
