@@ -228,7 +228,7 @@ button{
     border-radius: 9px;
 }
 /*Left container inside the main container*/
-.content-left, .nav, #to-do, .tamaNOTchi{
+.content-left, .nav, #to-do, .tamaNOTchi, #music{
     float: left;
     width: 240px;
 }
@@ -380,6 +380,13 @@ transition: clip-path 275ms ease;
 }
 li::marker{
     color:darkorchid;
+}
+#music{
+    position: absolute;
+    left: 20px;
+    top: 650px;
+    height: 180px;
+    width: 340px;
 }
 .tamaNOTchi{
     background-image: url(/index/images/437.GIF);
