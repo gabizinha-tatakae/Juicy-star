@@ -191,7 +191,7 @@ button{
 .topnav a{
     display: inline-block;
     color:#ff8fff;
-    padding: 10px 56.9px;
+    padding: 10px 59px;
     text-decoration: none;
 }
 .topnav a:hover{
@@ -305,13 +305,19 @@ button{
     float: right;
     background-image: repeating-radial-gradient(rgba(84, 26, 131, 0.637) 1%, rgb(94, 26, 107) 15%);
     background-size: 500px;
-    width: 190px;
+    width: 210px;
     height: 320px;
     padding: 10px;
 }
 .cliques a{
-    color: #ff7fe3;
+    color: #ff93ce;
 }
+.cliques a:hover{
+    color: white;
+    text-shadow: 0px 0px 5px #ff00ff;
+    transition: all 0.3s ease-out;
+}
+    
 /*Customization of both right and left sides*/
 h3{
     text-align: center;
@@ -339,7 +345,7 @@ transition: clip-path 275ms ease;
     height: 310px;
 }
 .status{
-    height: 335px;
+    height: 350px;
 }
 /*Customization of the left side*/
 .nav button{
@@ -414,8 +420,11 @@ li::marker{
     padding: 10px;
 }
 #statuscafe{
-    color: rgb(70, 32, 238);
+    background-image: linear-gradient( rgb(151, 203, 245), rgb(68, 151, 219), rgb(25, 114, 216));
+    width: 213px;
+    height: 115px;
     padding: .5em;
+    border: 3px groove #2447e2;
     border-radius: 12px;
     margin-top: 5px;
     margin-bottom: 5px;
