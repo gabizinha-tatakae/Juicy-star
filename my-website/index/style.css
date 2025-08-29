@@ -245,7 +245,7 @@ button{
     
 }
 /*Common shared customization*/
-.presentation, .nav, .updates, .status, .buttons, .stamps, .webring , #to-do, .tamaNOTchi, #myart, .cliques, #gifypet{
+.presentation, .nav, .updates, .status, .buttons, .stamps, .webring , #to-do, .tamaNOTchi, #myart, .cliques, #gifypet, #protection{
     overflow-y: scroll;
     overflow-x: hidden;
     background: rgba(0, 0, 0, 0.8);
@@ -258,7 +258,7 @@ button{
     text-align: left;
 }
 /*Middle section of the main frame customization*/
-.presentation, .buttons, .tamaNOTchi, #to-do, #myart, .cliques{
+.presentation, .buttons, .tamaNOTchi, #to-do, #myart, .cliques, #protection{
     overflow: hidden;
 }
 .presentation{
