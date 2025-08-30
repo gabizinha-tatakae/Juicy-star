@@ -159,16 +159,22 @@ body, #head{
     margin-left: auto;
     margin-right: auto;
 }
+@font-face {
+src: url(https://files.catbox.moe/rbrpu1.otf);
+font-family: 'Typewriter Condensed';
+}
 body{
     background-color: black;
     background-image: url(/index/images/strbackground.gif);
     background-size: 350px;
     background-repeat: repeat;
     background-attachment: fixed;
-    font-family: "brush script mt", "lucida handwriting", cursive;
+    /*font-family: "brush script mt", "lucida handwriting", cursive;*/
+    font-family: 'Typewriter Condensed', monospace;
 }
 button{
-    font-family: "brush script mt", "lucida handwriting", cursive;
+    /*font-family: "brush script mt", "lucida handwriting", cursive;*/
+    font-family: 'Typewriter Condensed', monospace;
 }
 /*header, footer and main body styling*/
 .topnav, .footer, .content{
@@ -178,14 +184,14 @@ button{
     max-width: 1100px;
     border: 4px groove #b624e2;
     margin: 10px auto;
-    font-size: 15px;
+    font-size: 17px;
     text-align: center;
 }
 /*Top navigation customization*/
 .topnav{
     overflow: hidden;
     border-radius: 50px 50px 1px 1px;
-    font-size: 17px;
+    font-size: 19px;
     text-align: left;
 }
 .topnav a{
@@ -197,13 +203,13 @@ button{
 .topnav a:hover{
     background-color:mistyrose;
     color: hotpink;
-    font-size: 18px;
+    font-size: 20px;
     transition: all 0.3s ease-out;
 }
 .topnav a:active{
     background-color: #dbc5c2;
     color: #dd5b9c;
-    font-size: 17px;
+    font-size: 19px;
 }
 /*Page footer customization*/
 .footer{
@@ -215,7 +221,7 @@ button{
     border: none;
     color: #ff8fff;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 17px;
 }
 #credit:hover{
     text-decoration: wavy underline;
@@ -252,7 +258,7 @@ button{
     color: #e080e0;
     outline: 4px ridge #b99227;
     margin: 10px auto;
-    font-size: 15px;
+    font-size: 18px;
     box-shadow: 7px 8px 15px #522053;
     border-radius: 7px;
     text-align: left;
@@ -298,7 +304,7 @@ button{
 }
 .stamps{
     display: inline-block;
-    width: 322px;
+    width: 329px;
     height: 320px;
 }
 .cliques{
@@ -354,7 +360,7 @@ transition: clip-path 275ms ease;
     background-image: linear-gradient(rgb(233, 151, 229), rgb(221, 57, 194));
     width: 233px;
     border:2px outset #dd50be;
-    font-size: 14px;
+    font-size: 16px;
     text-align:left;
 }
 .nav button:active{
@@ -373,7 +379,7 @@ transition: clip-path 275ms ease;
 }
 .nav li:active, .nav a:active{
     color:gold;
-    font-size: 13px;
+    font-size: 15px;
     transition: all 0.3s ease-out;
 }
 #to-do li{
