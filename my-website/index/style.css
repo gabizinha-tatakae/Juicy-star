@@ -2,7 +2,7 @@ body {
 cursor: url('https://files.catbox.moe/ya4jpg.gif') 0 0, auto;
 }
 /*Change image scale when hover*/
-.stamps img:hover, .status img:hover, .buttons img:hover{
+.stamps img:hover, .status img:hover, .buttons img:hover, .tamaNOTchi img:hover{
 transform: scale(1.2);
 transition: all 0.3s ease-in-out;
 }
@@ -12,21 +12,11 @@ color:rgb(248, 199, 255);
 background-color:rgba(255, 105, 180, 0.822);
 text-shadow: 0 0 5px pink;
 }
-/**::-webkit-scrollbar {
-    width: 12px;
-}
-*::-webkit-scrollbar-track {
-    background: rgba(29, 30, 31, 0.2);
-}
-*::-webkit-scrollbar-thumb {
-    background-color: #52c49e;
-    border: 3px outset #34bd8f;
-    border-radius: 3px;
-}*/
+/*box sizing include the padding and border in an element's total width and height*/
 *{
     box-sizing: border-box;
 }
-/*Costom scrollbar*/
+/*Costom scrollbar I got from Scripted page*/
 ::-webkit-scrollbar {
 width: 12px;
 height: 12px;
@@ -165,19 +155,19 @@ body{
     background-size: 350px;
     background-repeat: repeat;
     background-attachment: fixed;
-    font-family: "brush script mt", "lucida handwriting", cursive;
+    font-family: "brush script mt", "lucida handwriting", cursive; /*Change the font*/
 }
 button{
-    font-family: "brush script mt", "lucida handwriting", cursive;
+    font-family: "brush script mt", "lucida handwriting", cursive; /*Change the font*/
 }
-/*header, footer and main body styling*/
+/*navigation, footer and main body styling*/
 .topnav, .footer, .content{
     background-color:rgba(186, 85, 211, 0.8);
     color: #ff8fff;
     width: calc(100% - 100px);
     max-width: 1100px;
     border: 4px groove #b624e2;
-    margin: 10px auto;
+    margin: 5px auto;
     font-size: 15px;
     text-align: center;
 }
@@ -186,7 +176,7 @@ button{
     overflow: hidden;
     border-radius: 50px 50px 1px 1px;
     font-size: 17px;
-    text-align: left;
+    text-align: center;
 }
 .topnav a{
     display: inline-block;
@@ -210,6 +200,7 @@ button{
     padding: 10px;
     border-radius: 4px 4px 70px 70px;
 }
+/*disclaimer button*/
 #credit{
     background-color: transparent;
     border: none;
@@ -223,133 +214,37 @@ button{
 }
 /*Main container*/
 .content{
-    overflow: auto;
-    padding: 10px;
+    display: block;
+    overflow: hidden;
+    height: 1115px;
+    padding: 3px;
+    margin: auto;
     border-radius: 9px;
 }
-/*Left container inside the main container*/
-.content-left, .nav, #to-do, .tamaNOTchi, #music{
-    float: left;
-    width: 240px;
-}
-/*Right container inside the main container*/
-.content-right, .updates, .status, #myart{
-    float: right;
-    width: 240px;
-}
-/*Middle container...well you got it*/
-.content-middle{
-    display: inline-block;
-    width: 100%;
-    max-width: 545px;
-    
+.container{
+    display: grid;
+    grid-template-columns: 245px auto 245px;
+    grid-template-rows: 320px 370px 375px 340px;
+    gap: 17px;
+    justify-content: space-around;
 }
 /*Common shared customization*/
-.presentation, .nav, .updates, .status, .buttons, .stamps, .webring , #to-do, .tamaNOTchi, #myart, .cliques, #gifypet{
+.presentation, .nav, .updates, .status, .buttons, .stamps, .to-do, .tamaNOTchi, #myart, .cliques, #gifypet{
     overflow-y: scroll;
     overflow-x: hidden;
     background: rgba(0, 0, 0, 0.8);
     color: #e080e0;
     outline: 4px ridge #b99227;
-    margin: 10px auto;
     font-size: 15px;
     box-shadow: 7px 8px 15px #522053;
     border-radius: 7px;
     text-align: left;
 }
-/*Middle section of the main frame customization*/
-.presentation, .buttons, .tamaNOTchi, #to-do, #myart, .cliques{
-    overflow: hidden;
+.presentation, .tamaNOTchi, .to-do, .cliques{
+    overflow: auto;
 }
-.presentation{
-    display: inline-block;
-    background: rgba(0, 0, 0, 0.8) url(/index/images/Background064.gif) repeat border-box;
-    background-size: cover;
-    width: calc(100% - 100);
-    border: 18px solid transparent;
-    border-image: url(/index/images/littlestar.gif) 30 round;
-}
-.presentation p{
-    float: left;
-    color: #cf28cf;
-    width: 300px;
-    text-indent: 10px;
-}
-#disclaimer{
-    display: none;
-}
-#more{
-    color: #790a9b;
-    background-image: linear-gradient(rgb(255, 192, 231), rgb(218, 64, 218));
-    border: 2px outset rgb(243, 122, 142);
-    border-radius: 9px;
-}
-#more:active{
-    border: 2px inset rgb(253, 93, 160);
-}
-#wipe{
-    display:inline;             
-}
-.buttons a img{
-    cursor: pointer;
-}
-#gifypet{
-    float: left;
-}
-.stamps{
-    display: inline-block;
-    width: 322px;
-    height: 320px;
-}
-.cliques{
-    float: right;
-    background-image: repeating-radial-gradient(rgba(84, 26, 131, 0.637) 1%, rgb(94, 26, 107) 15%);
-    background-size: 500px;
-    width: 210px;
-    height: 320px;
-    padding: 10px;
-}
-.cliques a{
-    color: #ff93ce;
-}
-.cliques a:hover{
-    color: white;
-    text-shadow: 0px 0px 5px #ff00ff;
-    transition: all 0.3s ease-out;
-}
-    
-/*Customization of both right and left sides*/
-h3{
-    text-align: center;
-    display: inline;
-    padding: 0px 0px 0px 35px;
-    position: relative;
-    transition: clip-path 275ms ease;
-}
-
-h3:hover span::before, .link:focus span::before {
-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-}
-h3 span {
-position: relative;
-display: inline-block;
-}
-h3 span::before {
-position: absolute;
-content: attr(data-content);
-text-decoration: underline;
-clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
-transition: clip-path 275ms ease;
-}
-.nav, .updates{
-    height: 310px;
-}
-.status{
-    height: 350px;
-}
-/*Customization of the left side*/
+/*Navigation bar*/
 .nav button{
-    display: grid; /*Not so sure why I put this but...yk*/
     list-style: none;
     background-image: linear-gradient(rgb(233, 151, 229), rgb(221, 57, 194));
     width: 233px;
@@ -376,38 +271,37 @@ transition: clip-path 275ms ease;
     font-size: 13px;
     transition: all 0.3s ease-out;
 }
-#to-do li{
-    padding: 15px;
+/*Presentation note*/
+.presentation{
+    background: rgba(0, 0, 0, 0.8) url(/index/images/Background064.gif) repeat border-box;
+    background-size: cover;
+    height: 280px;
+    border: 18px solid transparent;
+    border-image: url(/index/images/littlestar.gif) 30 round;
 }
-#to-do li:hover{
-    background-color: #522053;
-    color: white;
-    text-shadow: 2px 2px 1px black;
+.presentation p{
+    float: left;
+    color: #cf28cf;
+    width: 300px;
+    text-indent: 10px;
 }
-li::marker{
-    color:darkorchid;
+/*Disclaimer button*/
+#disclaimer{
+    display: none;
 }
-#music{
-    position: absolute;
-    left: 20px;
-    top: 650px;
-    height: 180px;
-    width: 340px;
+#more{
+    color: #790a9b;
+    background-image: linear-gradient(rgb(255, 192, 231), rgb(218, 64, 218));
+    border: 2px outset rgb(243, 122, 142);
+    border-radius: 9px;
 }
-.tamaNOTchi{
-    background-image: url(/index/images/437.GIF);
-    background-size: 120px;
-    display: inline-block;
-    padding: 8px;
-    text-align: center;
+#more:active{
+    border: 2px inset rgb(253, 93, 160);
 }
-.tamaNOTchi img{
-    margin: 8px;
+#wipe{
+    display:inline;             
 }
-/*Customization of the right side*/
-.updates, .status, #myart{
-    float: right;
-}
+/*Page updates*/
 .updates{
     background-image: repeating-radial-gradient(rgba(0, 255, 98, 0.3)1%, rgba(119, 0, 255, 0.3)1%, rgba(0, 128, 128, 0.3)8%);
     padding: 15px;
@@ -415,6 +309,28 @@ li::marker{
 .updates hr{
     border: 1px dashed rgb(147, 95, 190);
 }
+/*To-do list*/
+.to-do li{
+    padding: 10px;
+}
+.to-do li:hover{
+    background-color: #522053;
+    color: white;
+    text-shadow: 2px 2px 1px black;
+}
+li::marker{
+    color:darkorchid;
+}
+/*marquee buttons*/
+.buttons{
+    height: 43px;
+    padding-top: 3px;
+    overflow: hidden;
+}
+.buttons a img{
+    cursor: pointer; /*change cursor*/
+}
+/*My status*/
 .status{
     background-image: url(/index/images/553.GIF);
     padding: 10px;
@@ -433,43 +349,95 @@ table{ /*For the current moon thing*/
     display: block;
     margin: auto;
 }
-#myart{
-    height: 359px;
+/*tamaNOTchi*/
+.tamaNOTchi{
+    background-image: url(/index/images/437.GIF);
+    background-size: 120px;
+    height: 130px;
+    padding: 8px;
+    text-align: center;
 }
+.tamaNOTchi img {margin: 8px;}
+/*my art*/
+#myart{ overflow: hidden;}
 #myart img{
-    width: 240px;
-    height: 465px;
+    width: 260px;
+    height: 430px;
     object-fit: cover;
-    object-position: -70px -50px;
-    image-rendering: optimizeQuality;
+    object-position: -20px -50px;
 }
+/*Web cliques*/
+.cliques{
+    background-image: repeating-radial-gradient(rgba(84, 26, 131, 0.637) 1%, rgb(94, 26, 107) 15%);
+    background-size: 500px;
+    padding: 10px;
+}
+.cliques a{
+    color: #ff93ce;
+}
+.cliques a:hover{
+    color: white;
+    text-shadow: 0px 0px 5px #ff00ff;
+    transition: all 0.3s ease-out;
+}
+/*title customization from Scripted page*/
+h3{
+    text-align: center;
+    display: inline;
+    padding: 0px 0px 0px 35px;
+    position: relative;
+    transition: clip-path 275ms ease;
+}
+h3:hover span::before, .link:focus span::before {
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+h3 span {
+position: relative;
+display: inline-block;
+}
+h3 span::before {
+position: absolute;
+content: attr(data-content);
+text-decoration: underline;
+clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+transition: clip-path 275ms ease;
+}
+/*Music player*/
+#music{
+    position: absolute;
+    left: 20px;
+    top: 650px;
+    height: 180px;
+    width: 340px;
+}
+/*Floating images*/
 #window1{
     position: absolute;
     top: 290px;
     left: 130px;
     z-index: 0;
-    cursor: pointer;
+    cursor: pointer; /*change cursor*/
 }
 #statue{
     position: absolute;
     bottom: -420px;
     right: 130px;
     z-index: 1;
-    cursor: pointer;
+    cursor: pointer; /*change cursor*/
 }
 #window2{
     position: absolute;
     bottom: -150px;
     right: 130px;
     z-index: 1;
-    cursor: pointer;
+    cursor: pointer; /*change cursor*/
 }
 #window3{
     position: absolute;
     top: 430px;
     left: 20px;
     z-index: 1;
-    cursor: pointer;
+    cursor: pointer; /*change cursor*/
 }
 #pc{
     position: absolute;
@@ -488,7 +456,7 @@ table{ /*For the current moon thing*/
     bottom: -425px;
     width: 170px;
 }
-
+/*Responsive design for floating images*/
 @media screen and (max-width: 1000px) {
     div.hide {
         display: none;
