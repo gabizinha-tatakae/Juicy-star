@@ -216,17 +216,17 @@ button{
 .content{
     display: block;
     overflow: hidden;
-    height: 1115px;
+    height: 1100px;
     padding: 3px;
     margin: auto;
     border-radius: 9px;
 }
 .container{
     display: grid;
-    grid-template-columns: 245px auto 245px;
-    grid-template-rows: 320px 370px 375px 340px;
+    grid-template-columns: 245px 321px 210px 245px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
     gap: 17px;
-    justify-content: space-around;
+    justify-content: start;
 }
 /*Common shared customization*/
 .presentation, .nav, .updates, .status, .buttons, .stamps, .to-do, .tamaNOTchi, #myart, .cliques, #gifypet{
@@ -244,6 +244,12 @@ button{
     overflow: auto;
 }
 /*Navigation bar*/
+.nav{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
 .nav button{
     list-style: none;
     background-image: linear-gradient(rgb(233, 151, 229), rgb(221, 57, 194));
@@ -273,11 +279,17 @@ button{
 }
 /*Presentation note*/
 .presentation{
-    background: rgba(0, 0, 0, 0.8) url(/index/images/Background064.gif) repeat border-box;
-    background-size: cover;
-    height: 280px;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-image: url(/index/images/wizard.gif), url(/index/images/Background064.gif);
+    background-repeat: no-repeat, repeat;
+    background-position: 350px, center;
+    background-size: 150px, 130px, 700px;
     border: 18px solid transparent;
-    border-image: url(/index/images/littlestar.gif) 30 round;
+    border-image: url(/index/images/small/littlestar.gif) 30 round;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 5;
 }
 .presentation p{
     float: left;
@@ -305,11 +317,21 @@ button{
 .updates{
     background-image: repeating-radial-gradient(rgba(0, 255, 98, 0.3)1%, rgba(119, 0, 255, 0.3)1%, rgba(0, 128, 128, 0.3)8%);
     padding: 15px;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 6;
 }
 .updates hr{
     border: 1px dashed rgb(147, 95, 190);
 }
 /*To-do list*/
+.to-do{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 11;
+}
 .to-do li{
     padding: 10px;
 }
@@ -323,17 +345,49 @@ li::marker{
 }
 /*marquee buttons*/
 .buttons{
-    height: 43px;
-    padding-top: 3px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    padding-top: 6px;
     overflow: hidden;
+    grid-row-start: 5;
+    grid-row-end: 6;
 }
 .buttons a img{
     cursor: pointer; /*change cursor*/
+}
+/*Stamps*/
+.stamps{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 11;
+}
+/*Web cliques*/
+.cliques{
+    background-image: repeating-radial-gradient(rgba(84, 26, 131, 0.637) 1%, rgb(94, 26, 107) 15%);
+    background-size: 500px;
+    padding: 10px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 11;
+}
+.cliques a{
+    color: #ff93ce;
+}
+.cliques a:hover{
+    color: white;
+    text-shadow: 0px 0px 5px #ff00ff;
+    transition: all 0.3s ease-out;
 }
 /*My status*/
 .status{
     background-image: url(/index/images/553.GIF);
     padding: 10px;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 11;
 }
 #statuscafe{
     background-image: linear-gradient( rgb(151, 203, 245), rgb(68, 151, 219), rgb(25, 114, 216));
@@ -353,32 +407,27 @@ table{ /*For the current moon thing*/
 .tamaNOTchi{
     background-image: url(/index/images/437.GIF);
     background-size: 120px;
-    height: 130px;
-    padding: 8px;
+    padding: 3px;
     text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 11;
+    grid-row-end: 13;
 }
 .tamaNOTchi img {margin: 8px;}
 /*my art*/
-#myart{ overflow: hidden;}
+#myart{ 
+    overflow: hidden;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 11;
+    grid-row-end: 17;
+}
 #myart img{
     width: 260px;
-    height: 430px;
+    height: 435px;
     object-fit: cover;
     object-position: -20px -50px;
-}
-/*Web cliques*/
-.cliques{
-    background-image: repeating-radial-gradient(rgba(84, 26, 131, 0.637) 1%, rgb(94, 26, 107) 15%);
-    background-size: 500px;
-    padding: 10px;
-}
-.cliques a{
-    color: #ff93ce;
-}
-.cliques a:hover{
-    color: white;
-    text-shadow: 0px 0px 5px #ff00ff;
-    transition: all 0.3s ease-out;
 }
 /*title customization from Scripted page*/
 h3{
