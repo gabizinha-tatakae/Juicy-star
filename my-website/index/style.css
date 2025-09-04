@@ -155,10 +155,6 @@ body{
     background-size: 350px;
     background-repeat: repeat;
     background-attachment: fixed;
-    font-family: "brush script mt", "lucida handwriting", cursive; /*Change the font*/
-}
-button{
-    font-family: "brush script mt", "lucida handwriting", cursive; /*Change the font*/
 }
 /*navigation, footer and main body styling*/
 .topnav, .footer, .content{
@@ -208,9 +204,47 @@ button{
     text-decoration: none;
     font-size: 15px;
 }
-#credit:hover{
+#credit:hover, .modal-content a:hover{
     text-decoration: wavy underline;
     font-style: oblique;
+    cursor: pointer;
+}
+/*Modal*/
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0, 0, 0); 
+    background-color: rgba(15, 2, 27, 0.5);
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #a586c2;
+    width: 80%; 
+    max-width: 600px;
+    border-radius: 12px;
+}
+.modal-content a{
+    color: #d671f5;
+    text-decoration: none;
+}
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
 /*Main container*/
 .content{
@@ -229,7 +263,7 @@ button{
     justify-content: start;
 }
 /*Common shared customization*/
-.presentation, .nav, .updates, .status, .buttons, .stamps, .to-do, .tamaNOTchi, #myart, .cliques, #gifypet{
+.presentation, .nav, .updates, .status, .buttons, .stamps, .to-do, .tamaNOTchi, #myart, .cliques, #gifypet, .webring{
     overflow-y: scroll;
     overflow-x: hidden;
     background: rgba(0, 0, 0, 0.8);
@@ -240,7 +274,7 @@ button{
     border-radius: 7px;
     text-align: left;
 }
-.presentation, .tamaNOTchi, .to-do, .cliques{
+.presentation, .tamaNOTchi, .to-do, .cliques, .webring{
     overflow: auto;
 }
 /*Navigation bar*/
@@ -415,13 +449,20 @@ table{ /*For the current moon thing*/
     grid-row-end: 13;
 }
 .tamaNOTchi img {margin: 8px;}
+.webring{
+    padding: 10px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 11;
+    grid-row-end: 16;
+}
 /*my art*/
 #myart{ 
     overflow: hidden;
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 11;
-    grid-row-end: 17;
+    grid-row-end: 16;
 }
 #myart img{
     width: 260px;
@@ -433,7 +474,7 @@ table{ /*For the current moon thing*/
 h3{
     text-align: center;
     display: inline;
-    padding: 0px 0px 0px 35px;
+    padding: 0px 0px 0px 24px;
     position: relative;
     transition: clip-path 275ms ease;
 }
