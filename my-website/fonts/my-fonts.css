@@ -98,3 +98,13 @@ h3{
     font-size: 17px;
     letter-spacing: 3px;
 }
+
+h1{
+    font-family: "Nabla", system-ui;
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+h2{
+    font-family: "honk", system-ui;
+    letter-spacing: 3px;
+}

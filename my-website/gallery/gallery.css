@@ -1,20 +1,31 @@
 /* Melon's Gallery Maker! 0.0.2+ */
 
+::selection{
+color:rgb(248, 199, 255);
+background-color:rgba(255, 105, 180, 0.822);
+text-shadow: 0 0 5px pink;
+}
+
 body {
-    font-family: "Times New Roman", serif;
-    background-color: #d6d6d6;
+    background: #2f0a749a;
+    color: #dfe086;
     font-size: 1.1em;
     padding: 30px;
+    font-size: 1em;
 }
 
 a,
 a:visited {
-    color: #6138ff;
-    text-decoration: underline;
+    color: #ffe138;
+    text-decoration: none;
 }
 
 a:hover {
-    text-decoration: none;
+    text-shadow: 0px 0px 5px #ffd900;
+    transition: all 0.4s ease-in-out;
+}
+a:active {
+    font-size: smaller;
 }
 
 header,
@@ -49,12 +60,15 @@ footer {
 
 #photos img {
     border: 3px ridge #c3c3c3;
-    /* Enable this for pixel art!! */
-    /* image-rendering: pixelated; */
+    border-width:17px; 
+    border-style:solid;
+    border-image: url("https://i.ibb.co/LYSfp26/C9487459-587-E-4-EDC-89-C1-2-B2-F0804-F5-A7.png") 35 fill round;        
+    
 }
 
 #photos img:hover {
-    border-color: #ffda00;
+    transform: scale(1.1);
+    transition: all 0.4s ease-in-out;
 }
 
 #photos span {
