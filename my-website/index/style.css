@@ -1,11 +1,13 @@
-body {
-cursor: url('http://www.rw-designer.com/cursor-extern.php?id=111111, auto') 0 0, auto;
+* {
+cursor: url('http://www.rw-designer.com/cursor-extern.php?id=111111') 0 0, auto;
 }
 a, button{
-cursor: url('http://www.rw-designer.com/cursor-extern.php?id=111125, auto') 0 0, auto;
+cursor: url('http://www.rw-designer.com/cursor-extern.php?id=111125') 0 0, auto;
 }
 /*Change image scale when hover*/
-.stamps img:hover, .status img:hover, .buttons img:hover, .tamaNOTchi img:hover{
+/*.stamps img:hover, .status img:hover, .buttons img:hover, .tamaNOTchi img:hover*/
+
+.grow img:hover{
 transform: scale(1.2);
 transition: all 0.3s ease-in-out;
 }
@@ -265,7 +267,7 @@ body{
     justify-content: start;
 }
 /*Common shared customization*/
-.presentation, .nav, .updates, .status, .buttons, .stamps, .to-do, .tamaNOTchi, #myart, .cliques, #gifypet, .webring{
+.model{
     overflow-y: scroll;
     overflow-x: hidden;
     background: rgba(0, 0, 0, 0.8);
@@ -276,8 +278,9 @@ body{
     border-radius: 7px;
     text-align: left;
 }
-.tamaNOTchi, .to-do{
+.no-scroll{
     overflow: hidden;
+    /*.tamaNOTchi, .to-do*/
 }
 .presentation, .cliques, .webring{
     overflow: auto;
@@ -451,7 +454,10 @@ table{ /*For the current moon thing*/
     grid-row-start: 11;
     grid-row-end: 13;
 }
-.tamaNOTchi img {margin: 8px;}
+.tamaNOTchi img {
+    margin: 8px;
+    width: 75px;
+}
 .webring{
     padding: 10px;
     grid-column-start: 3;
@@ -469,9 +475,23 @@ table{ /*For the current moon thing*/
 }
 #myart img{
     width: 260px;
-    height: 500px;
+    height: 450px;
     object-fit: cover;
-    object-position: -60px -60px;
+    object-position: -40px -40px;
+}
+.protection{
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 13;
+    grid-row-end: 17;
+}
+.blinkies{
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 16;
+    grid-row-end: 17;
 }
 /*title customization from Scripted page*/
 h3{

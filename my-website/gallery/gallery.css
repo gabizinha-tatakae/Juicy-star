@@ -1,10 +1,10 @@
 /* Melon's Gallery Maker! 0.0.2+ */
 
-body {
-cursor: url('http://www.rw-designer.com/cursor-extern.php?id=111111, auto') 0 0, auto;
+* {
+cursor: url('http://www.rw-designer.com/cursor-extern.php?id=111111') 0 0, auto;
 }
 a, button{
-cursor: url('http://www.rw-designer.com/cursor-extern.php?id=111125, auto') 0 0, auto;
+cursor: url('http://www.rw-designer.com/cursor-extern.php?id=111125') 0 0, auto;
 }
 
 /*Costom scrollbar I got from Scripted page*/
