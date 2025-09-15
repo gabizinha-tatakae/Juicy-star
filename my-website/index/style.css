@@ -1,5 +1,8 @@
 body {
-cursor: url('https://files.catbox.moe/ya4jpg.gif') 0 0, auto;
+cursor: url('http://www.rw-designer.com/cursor-extern.php?id=111111, auto') 0 0, auto;
+}
+a, button{
+cursor: url('http://www.rw-designer.com/cursor-extern.php?id=111125, auto') 0 0, auto;
 }
 /*Change image scale when hover*/
 .stamps img:hover, .status img:hover, .buttons img:hover, .tamaNOTchi img:hover{
@@ -207,7 +210,6 @@ body{
 #credit:hover, .modal-content a:hover{
     text-decoration: wavy underline;
     font-style: oblique;
-    cursor: pointer;
 }
 /*Modal*/
 .modal {
@@ -274,7 +276,10 @@ body{
     border-radius: 7px;
     text-align: left;
 }
-.presentation, .tamaNOTchi, .to-do, .cliques, .webring{
+.tamaNOTchi, .to-do{
+    overflow: hidden;
+}
+.presentation, .cliques, .webring{
     overflow: auto;
 }
 /*Navigation bar*/
@@ -386,9 +391,7 @@ li::marker{
     grid-row-start: 5;
     grid-row-end: 6;
 }
-.buttons a img{
-    cursor: pointer; /*change cursor*/
-}
+
 /*Stamps*/
 .stamps{
     grid-column-start: 2;
@@ -462,13 +465,13 @@ table{ /*For the current moon thing*/
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 11;
-    grid-row-end: 16;
+    grid-row-end: 17;
 }
 #myart img{
     width: 260px;
-    height: 435px;
+    height: 500px;
     object-fit: cover;
-    object-position: -20px -50px;
+    object-position: -60px -60px;
 }
 /*title customization from Scripted page*/
 h3{
@@ -506,28 +509,24 @@ transition: clip-path 275ms ease;
     top: 290px;
     left: 130px;
     z-index: 0;
-    cursor: pointer; /*change cursor*/
 }
 #statue{
     position: absolute;
     bottom: -420px;
     right: 130px;
     z-index: 1;
-    cursor: pointer; /*change cursor*/
 }
 #window2{
     position: absolute;
     bottom: -150px;
     right: 130px;
     z-index: 1;
-    cursor: pointer; /*change cursor*/
 }
 #window3{
     position: absolute;
     top: 430px;
     left: 20px;
     z-index: 1;
-    cursor: pointer; /*change cursor*/
 }
 #pc{
     position: absolute;
