@@ -147,10 +147,10 @@ body, #head{
     image-rendering:pixelated;
 }
 #head{
-    width: 350px;
+    width: 24em;
 }
 [title~="my"]{
-    width: 350px;
+    width: 25em;
     margin-left: auto;
     margin-right: auto;
 }
@@ -165,8 +165,8 @@ body{
 .topnav, .footer, .content{
     background-color:rgba(186, 85, 211, 0.8);
     color: #ff8fff;
-    width: calc(100% - 100px);
-    max-width: 1100px;
+    width: calc(100% - 10px);
+    max-width: 1115px;
     border: 4px groove #b624e2;
     margin: 5px auto;
     font-size: 15px;
@@ -198,7 +198,7 @@ body{
 }
 /*Page footer customization*/
 .footer{
-    padding: 10px;
+    padding: 5px;
     border-radius: 4px 4px 70px 70px;
 }
 /*disclaimer button*/
@@ -254,7 +254,7 @@ body{
 .content{
     display: block;
     overflow: hidden;
-    height: 1100px;
+    height: 675px;
     padding: 3px;
     margin: auto;
     border-radius: 9px;
@@ -519,38 +519,38 @@ transition: clip-path 275ms ease;
 #music{
     position: absolute;
     left: 20px;
-    top: 650px;
+    top: 530px;
     height: 180px;
     width: 340px;
 }
 /*Floating images*/
 #window1{
     position: absolute;
-    top: 290px;
+    top: 170px;
     left: 130px;
     z-index: 0;
 }
 #statue{
     position: absolute;
-    bottom: -420px;
+    bottom: 10px;
     right: 130px;
     z-index: 1;
 }
 #window2{
     position: absolute;
-    bottom: -150px;
+    bottom: 250px;
     right: 130px;
-    z-index: 1;
+    z-index: 0;
 }
 #window3{
     position: absolute;
-    top: 430px;
+    top: 320px;
     left: 20px;
     z-index: 1;
 }
 #pc{
     position: absolute;
-    top: 430px;
+    top: 200px;
     right: 90px;
     z-index: -1;
 }
@@ -562,11 +562,11 @@ transition: clip-path 275ms ease;
 }
 #robot{
     position: absolute;
-    bottom: -425px;
+    bottom: 20px;
     width: 170px;
 }
 /*Responsive design for floating images*/
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1700px) {
     div.hide {
         display: none;
     }
