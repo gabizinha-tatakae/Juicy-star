@@ -1,7 +1,7 @@
 * {
 cursor: url('http://www.rw-designer.com/cursor-extern.php?id=111111') 0 0, auto;
 }
-a, button{
+a, button, a img{
 cursor: url('http://www.rw-designer.com/cursor-extern.php?id=111125') 0 0, auto;
 }
 /*Change image scale when hover*/
