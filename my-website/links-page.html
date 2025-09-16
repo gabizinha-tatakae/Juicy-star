@@ -14,65 +14,109 @@
         <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Comfortaa:wght@300..700&family=Comic+Relief&family=Flavors&family=Honk&family=Nabla&family=Press+Start+2P&family=Rampart+One&family=Ribeye+Marrow&family=Special+Elite&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/fonts/my-fonts.css"/>
         <style>
-            .model{
-                padding: 20px;
-                margin: 20px;
-            }
-            h3{
+            h4{ 
+                font-size: 1.3em;
+                display: inline;
                 padding: 10px;
-                text-align: center;
+            }
+            .sticky{
+                position: sticky;
+                top: 0;
+                background-color: rgb(33, 15, 37);
+                height: 2em;
+            }
+            .model{
+                overflow: auto;
+                padding: 0px;
+                width: 23em;
+                height: 15em;
+                outline: 4px ridge rgb(69, 135, 223);
             }
             body {
                 background-color:rgba(186, 85, 211, 0.1);
-                background-image: none;
+                
+            }
+            .links-container{
                 display: flex;
+                align-items: flex-start;
+                gap: 20px;
+                flex-wrap: wrap;
             }
             a{
+                margin: 6px;
                 text-decoration: none;
                 color: rgb(255, 146, 228);
                 transition: all 0.3s ease;
-                transform: rotate(120deg);
             }
             a:hover{
-                text-shadow: 0px 1px 0px rgb(148, 81, 255);
+                text-shadow: 1px 1px 1px rgb(248, 36, 255);
                 text-decoration:underline;
+                background-color: blueviolet;
+            }
+            a:active{
+                color: rgb(255, 175, 255);
+                font-size: smaller;
             }
         </style>
     </head>
     <body>
-        <div class="link1 model no-scroll">
-            <h3>Interesting/fun sites</h3><br>
-            <a target="_blank" href="https://www.windows93.net/#!flash">WINDOWS93</a><br>
-            <a target="_blank" href="https://citywalks.live/?n=1&cs=1">City Walks Live</a><br>
-            <a target="_blank" href="https://stars.chromeexperiments.com">100,000 Stars</a><br>
-            <a target="_blank" href="https://paveldogreat.github.io/WebGL-Fluid-Simulation/">WebGL Fluid Simulation</a><br>
-            <a target="_blank" href="https://eternalboxmirror.xyz/jukebox_index.html">The Eternal Jukebox</a><br>
-            <a target="_blank" href="https://aidn.jp/mikutap/">Mikutap</a><br>
-            <a target="_blank" href="https://theuselessweb.com">The Useless Web</a><br>
-            <a target="_blank" href="https://randomstreetview.com">Random Street View</a><br>
-            <a target="_blank" href="https://mrdoob.com">Mr.doob</a><br>
-            <a target="_blank" href="https://erowid.org">Erowid</a><br>
-            <a target="_blank" href="https://www.zoomquilt.org">Zoom Quilt</a><br>
-            <a target="_blank" href="https://www.mushroomexpert.com">MushroomExpert.Com</a><br>
-            <a target="_blank" href="https://rave.dj">RaveDJ</a><br>
-            <a target="_blank" href="https://www.zooniverse.org">Zooniverse</a><br>
-            <a target="_blank" href="https://artvee.com">Artvee</a>
-        </div>
-        <div class="model no-scroll">
-            <h3>For graphics</h3><br>
-            <a target="_blank" href="www.gifs-paradise.com">Free animated GIFs</a><br>
-            <a target="_blank" href="https://www.animatedimages.org">Animatedimages.org</a><br>
-            <a target="_blank" href="https://www.glitter-graphics.com">Glitter Graphics</a><br>
-            <a target="_blank" href="https://gifcities.org">GifCities</a><br>
-            <a target="_blank" href="https://www.remove.bg">Remove.bg</a><br>
-            <a target="_blank" href="https://www.photopea.com">Photopea</a><br>
-            <a target="_blank" href="https://gifer.com/pt/gifs/png">GIFER</a><br>
-            <a target="_blank" href="https://rentry.co/updatedpixels">PIXELS . . . ໒꒱</a><br>
-            <a target="_blank" href="https://wwdayo.wixsite.com/y2kawaii-web">Y2Kawaii Web</a><br>
-            <a target="_blank" href="https://cyber.dabamos.de/88x31/index5.html">Buttons 88x31 GIF Collection</a><br>
-            <a target="_blank" href="https://neonaut.neocities.org/cyber/88x31">88x31</a><br>
-            <a target="_blank" href="https://pixelsafari.neocities.org">Coco's pixel safari</a><br>
-            <a target="_blank" href="https://blog.spacehey.com/entry?id=1760361">Blinkie Hoard links!!! - rave >D<'s Blog</a>
+        <div class="links-container">
+            <div class="model no-scroll">
+                <div class="sticky">
+                    <h4>Interesting/fun sites</h4><br><br>
+                </div>
+                <a target="_blank" href="https://www.windows93.net/#!flash">WINDOWS93</a><br>
+                <a target="_blank" href="https://citywalks.live/?n=1&cs=1">City Walks Live</a><br>
+                <a target="_blank" href="https://stars.chromeexperiments.com">100,000 Stars</a><br>
+                <a target="_blank" href="https://paveldogreat.github.io/WebGL-Fluid-Simulation/">WebGL Fluid Simulation</a><br>
+                <a target="_blank" href="https://eternalboxmirror.xyz/jukebox_index.html">The Eternal Jukebox</a><br>
+                <a target="_blank" href="https://aidn.jp/mikutap/">Mikutap</a><br>
+                <a target="_blank" href="https://theuselessweb.com">The Useless Web</a><br>
+                <a target="_blank" href="https://randomstreetview.com">Random Street View</a><br>
+                <a target="_blank" href="https://mrdoob.com">Mr.doob</a><br>
+                <a target="_blank" href="https://erowid.org">Erowid</a><br>
+                <a target="_blank" href="https://www.zoomquilt.org">Zoom Quilt</a><br>
+                <a target="_blank" href="https://www.mushroomexpert.com">MushroomExpert.Com</a><br>
+                <a target="_blank" href="https://rave.dj">RaveDJ</a><br>
+                <a target="_blank" href="https://www.zooniverse.org">Zooniverse</a><br>
+                <a target="_blank" href="https://artvee.com">Artvee</a>
+            </div>
+            <div class="model no-scroll">
+                <div class="sticky">
+                    <h4>For graphics</h4><br><br>
+                </div>
+                <a target="_blank" href="https://www.gifs-paradise.com/#google_vignette">Free animated GIFs</a><br>
+                <a target="_blank" href="https://www.animatedimages.org">Animatedimages.org</a><br>
+                <a target="_blank" href="https://www.glitter-graphics.com">Glitter Graphics</a><br>
+                <a target="_blank" href="https://gifcities.org">GifCities</a><br>
+                <a target="_blank" href="https://www.remove.bg">Remove.bg</a><br>
+                <a target="_blank" href="https://www.photopea.com">Photopea</a><br>
+                <a target="_blank" href="https://gifer.com/pt/gifs/png">GIFER</a><br>
+                <a target="_blank" href="https://rentry.co/updatedpixels">PIXELS . . . ໒꒱</a><br>
+                <a target="_blank" href="https://wwdayo.wixsite.com/y2kawaii-web">Y2Kawaii Web</a><br>
+                <a target="_blank" href="https://cyber.dabamos.de/88x31/index5.html">Buttons 88x31 Collection</a><br>
+                <a target="_blank" href="https://neonaut.neocities.org/cyber/88x31">88x31</a><br>
+                <a target="_blank" href="https://pixelsafari.neocities.org">Coco's pixel safari</a><br>
+                <a target="_blank" href="https://blog.spacehey.com/entry?id=1760361">Blinkie Hoard links!!!</a>
+            </div>
+
+            <div class="model no-scroll">
+                <div class="sticky">
+                    <h4>Resources for websites</h4><br><br>
+                </div>
+                <a target="_blank" href="https://www.webmonkey.com/color-codes/">HTML Color Codes</a><br>
+                <a target="_blank" href="https://catbox.moe/">Catbox</a><br>
+                <a target="_blank" href="https://www.rw-designer.com/">RealWord Graphics</a><br>
+                <a target="_blank" href="https://css-ig.net/pinga">Pinga - image optimizer for web</a><br>
+                <a target="_blank" href="https://ditherit.com/">Dither it</a><br>
+                <a target="_blank" href="https://www.bloggif.com/">Animated GIF editor and GIF maker</a><br>
+                <a target="_blank" href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server">Live Preview - Visual Studio Marketplace</a><br>
+                <a target="_blank" href="https://www.gigaglitters.com/">Glitter text generator!</a><br>
+                <a target="_blank" href="https://www.online-image-editor.com/help/glitters">Add glitters to images</a><br>
+                <a target="_blank" href="https://neocitiestools.neocities.org/">Neocities tools</a><br>
+                <a target="_blank" href="https://www.pimp-my-profile.com/myspace">MySpace Codes</a><br>
+                <a target="_blank" href="https://discourse.32bit.cafe/t/resources-list-for-the-personal-web/49">32-Bit Cafe resources list</a><br>
+            </div>
         </div>
 
         <div>
