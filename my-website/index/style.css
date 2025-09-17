@@ -1,3 +1,4 @@
+/*Custom cursor*/
 * {
 cursor: url('http://www.rw-designer.com/cursor-extern.php?id=111111') 0 0, auto;
 }
@@ -5,8 +6,6 @@ a, button, img a{
 cursor: url('http://www.rw-designer.com/cursor-extern.php?id=111125') 0 0, auto;
 }
 /*Change image scale when hover*/
-/*.stamps img:hover, .status img:hover, .buttons img:hover, .tamaNOTchi img:hover*/
-
 .grow img:hover{
 transform: scale(1.2);
 transition: all 0.3s ease-in-out;
@@ -142,18 +141,19 @@ border-right: 1px solid #868a8e;
 box-shadow: none;
 }
             
-/*Page body and title style*/
+/*Page body and title rendering*/
 body, #head{
     image-rendering:pixelated;
 }
+/*Page title size*/
 #head{
-    width: 24em;
+    display: block;
+    margin: auto;
+    width: 90%;
+    min-width: 100px;
+    max-width: 300px;
 }
-[title~="my"]{
-    width: 25em;
-    margin-left: auto;
-    margin-right: auto;
-}
+/*Background style*/
 body{
     background-color: black;
     background-image: url(/index/images/strbackground.gif);
@@ -177,12 +177,11 @@ body{
     overflow: hidden;
     border-radius: 50px 50px 1px 1px;
     font-size: 17px;
-    text-align: center;
 }
 .topnav a{
     display: inline-block;
     color:#ff8fff;
-    padding: 10px 59px;
+    padding: 10px 60px;
     text-decoration: none;
 }
 .topnav a:hover{
@@ -280,7 +279,6 @@ body{
 }
 .no-scroll{
     overflow: hidden;
-    /*.tamaNOTchi, .to-do*/
 }
 .presentation, .cliques, .webring{
     overflow: auto;
@@ -321,11 +319,10 @@ body{
 }
 /*Presentation note*/
 .presentation{
-    background-color: rgba(0, 0, 0, 0.8);
     background-image: url(/index/images/wizard.gif), url(/index/images/Background064.gif);
     background-repeat: no-repeat, repeat;
-    background-position: 350px, center;
-    background-size: 150px, 130px, 700px;
+    background-position: 350px 20px, center;
+    background-size: 150px 220px, 300px;
     border: 18px solid transparent;
     border-image: url(/index/images/small/littlestar.gif) 30 round;
     grid-column-start: 2;
@@ -387,14 +384,13 @@ li::marker{
 }
 /*marquee buttons*/
 .buttons{
-    grid-column-start: 2;
-    grid-column-end: 4;
     padding-top: 6px;
     overflow: hidden;
+    grid-column-start: 2;
+    grid-column-end: 4;
     grid-row-start: 5;
     grid-row-end: 6;
 }
-
 /*Stamps*/
 .stamps{
     grid-column-start: 2;
@@ -479,7 +475,7 @@ table{ /*For the current moon thing*/
     object-fit: cover;
     object-position: -40px -40px;
 }
-.protection{
+.guardian{
     text-align: center;
     grid-column-start: 1;
     grid-column-end: 2;
@@ -493,7 +489,7 @@ table{ /*For the current moon thing*/
     grid-row-start: 16;
     grid-row-end: 17;
 }
-/*title customization from Scripted page*/
+/*title customization from Scripted's page*/
 h3{
     text-align: center;
     display: inline;
