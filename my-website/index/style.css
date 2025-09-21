@@ -20,125 +20,125 @@ text-shadow: 0 0 5px pink;
 *{
     box-sizing: border-box;
 }
+
 /*Costom scrollbar I got from Scripted page*/
 ::-webkit-scrollbar {
-width: 12px;
-height: 12px;
+width: 14px;
 }
 
-::-webkit-scrollbar-track {
-background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAIAAAD91JpzAAAAFElEQVQIW2M4fPz0////GYAYyAIASnoKpV3w4kgAAAAASUVORK5CYII=");
-image-rendering: pixelated;
--webkit-filter: grayscale(100%);
--moz-filter: grayscale(100%);
--ms-filter: grayscale(100%);
--o-filter: grayscale(100%);
-filter: grayscale(100%);
-}
-
-::-webkit-scrollbar-track:active {
-background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAIAAAD91JpzAAAAEElEQVQIW2No6+pjgAAgCwAWogM9VKrgGQAAAABJRU5ErkJggg==");
--webkit-filter: grayscale(100%);
--moz-filter: grayscale(100%);
--ms-filter: grayscale(100%);
--o-filter: grayscale(100%);
-filter: grayscale(100%);
-}
-
-::-webkit-scrollbar-thumb {
-border-top: 1px solid #cccccc;
-border-left: 1px solid #cccccc;
-border-right: 1px solid black;
-border-bottom: 1px solid black;
-box-shadow: inset 1px 1px 0 0 white, inset -1px -1px 0 0 #868a8e;
-width: 16px;
-height: 16px;
-background-color: #cccccc;
-z-index: 1;
+::-webkit-scrollbar:horizontal {
+height: 14px;
 }
 
 ::-webkit-scrollbar-corner {
-background-color: #cccccc;
+background: #eee;
 }
 
-::-webkit-resizer {
-width: 16px;
-height: 16px;
-background-color: #cccccc;
-background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAN0lEQVR4Ae3MgQUAMBRDwU5fFF05lb/CARTBw2Ulof0DxPtcwp3hNuEYnjbcEW4TjuFpwx3h9gMWGgZ2Y/PT2gAAAABJRU5ErkJggg==");
-background-position: bottom right;
-background-repeat: no-repeat;
-image-rendering: pixelated;
+::-webkit-scrollbar-track:vertical {
+background: linear-gradient(90deg, #e5e5e5, #f0f0f0 20%);
+border-radius: 5px;
 }
 
-::-webkit-scrollbar-button,
-.scroll::-webkit-scrollbar-button {
-border-top: 1px solid #cccccc;
-border-left: 1px solid #cccccc;
-border-right: 1px solid black;
-border-bottom: 1px solid black;
-box-shadow: inset 1px 1px 0 0 white, inset -1px -1px 0 0 #868a8e;
+::-webkit-scrollbar-track:horizontal {
+background: linear-gradient(180deg, #e5e5e5, #f0f0f0 20%);
+border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+border: 1.5px solid #888;
+border-radius: 5px;
+box-shadow: inset 0 -1px 1px #fff, inset 0 1px 1px #fff;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+background: linear-gradient(90deg, #eee 45%, #ddd 0, #bbb);
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+background: linear-gradient(180deg, #eee 45%, #ddd 0, #bbb);
+}
+
+::-webkit-scrollbar-button:horizontal:end:increment,
+::-webkit-scrollbar-button:horizontal:start:decrement,
+::-webkit-scrollbar-button:vertical:end:increment,
+::-webkit-scrollbar-button:vertical:start:decrement {
 display: block;
-width: 16px;
-height: 16px;
-background-color: #cccccc;
-image-rendering: pixelated;
+}
+
+::-webkit-scrollbar-button:vertical {
+height: 15px;
+}
+
+::-webkit-scrollbar-button:vertical:start:decrement {
+background: white;
+background: url("https://dl.dropbox.com/s/n9ji42h9hdgdtpc/scroll3.png"), #eee;
 background-repeat: no-repeat;
-background-position: center center;
+background-position: center;
+-moz-background-size: 100% auto, cover;
+-webkit-background-size: 100% auto, cover;
+-o-background-size: 100% auto, cover;
+background-size: 100% auto, cover;
+border: 1.5px solid #888;
+border-radius: 5px;
 }
 
-::-webkit-scrollbar-button:active,
-.scroll::-webkit-scrollbar-button:active {
-background-position: 2px 2px;
-}
-
-::-webkit-scrollbar-button:horizontal:decrement,
-.scroll::-webkit-scrollbar-button:horizontal:decrement {
-background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAAHklEQVQY02NgoBT8xyX8H5fwf1zCpOjAYwceV1EEAAO2D/HsQ4vsAAAAAElFTkSuQmCC");
-}
-
-::-webkit-scrollbar-button:horizontal:increment,
-.scroll::-webkit-scrollbar-button:horizontal:increment {
-background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAAHUlEQVQY02NgIB/8xy3xH7fEf9wS/0nUQZqrKAYAK44P8ZRmzLQAAAAASUVORK5CYII=");
-}
-
-::-webkit-scrollbar-button:vertical:decrement,
-.scroll::-webkit-scrollbar-button:vertical:decrement {
-background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGklEQVR4AWMYxuA/SYphmETFhDX9x4mHGQAAcL4P8dQiMq8AAAAASUVORK5CYII=");
-}
-
-::-webkit-scrollbar-button:vertical:increment,
-.scroll::-webkit-scrollbar-button:vertical:increment {
-background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAAF0lEQVQY02NgoBf4jwJxSOHQhcNAOgMAWWAP8Rv2U3UAAAAASUVORK5CYII=");
-}
-
-::-webkit-scrollbar-button:horizontal:increment:start,
-.scroll::-webkit-scrollbar-button:horizontal:increment:start {
+::-webkit-scrollbar-button:vertical:start:increment {
 display: none;
 }
 
-::-webkit-scrollbar-button:horizontal:decrement:end,
-.scroll::-webkit-scrollbar-button:horizontal:decrement:end {
+::-webkit-scrollbar-button:vertical:end:decrement {
 display: none;
 }
 
-::-webkit-scrollbar-button:vertical:increment:start,
-.scroll::-webkit-scrollbar-button:vertical:increment:start {
+::-webkit-scrollbar-button:vertical:end:increment {
+background: white;
+background: url("https://dl.dropbox.com/s/cdcco6pih7n1lae/scroll4.png"), #eee;
+background-repeat: no-repeat;
+background-position: center;
+-moz-background-size: 100% auto, cover;
+-webkit-background-size: 100% auto, cover;
+-o-background-size: 100% auto, cover;
+background-size: 100% auto, cover;
+border: 1.5px solid #888;
+border-radius: 5px;
+}
+
+::-webkit-scrollbar-button:horizontal {
+width: 14px
+}
+::-webkit-scrollbar-button:horizontal:start:increment {
+display: none;
+}
+::-webkit-scrollbar-button:horizontal:end:decrement {
 display: none;
 }
 
-::-webkit-scrollbar-button:vertical:decrement:end,
-.scroll::-webkit-scrollbar-button:vertical:decrement:end {
-display: none;
+::-webkit-scrollbar-button:horizontal:start:decrement {
+background: white;
+background: url("https://dl.dropbox.com/s/xcm618ghd823271/scroll5.png"), linear-gradient(180deg, #e5e5e5, #f0f0f0 20%);
+background-repeat: no-repeat;
+background-position: center;
+-moz-background-size: 100% auto, cover;
+-webkit-background-size: 100% auto, cover;
+-o-background-size: 100% auto, cover;
+background-size: 100% auto, cover;
+background-position: center;
+border-radius: 5px;
+border: 1.5px solid #888;
 }
 
-::-webkit-scrollbar-button:active,
-.scroll::-webkit-scrollbar-button:active {
-border-top: 1px solid #868a8e;
-border-left: 1px solid #868a8e;
-border-bottom: 1px solid #868a8e;
-border-right: 1px solid #868a8e;
-box-shadow: none;
+::-webkit-scrollbar-button:horizontal:end:increment {
+background: white;
+background: url("https://dl.dropbox.com/s/byeyi7am889ii9m/scroll6.png"), linear-gradient(180deg, #e5e5e5, #f0f0f0 20%);
+background-repeat: no-repeat;
+background-position: center;
+-moz-background-size: 100% auto, cover;
+-webkit-background-size: 100% auto, cover;
+-o-background-size: 100% auto, cover;
+background-size: 100% auto, cover;
+background-position: center;
+border-radius: 5px;
+border: 1.5px solid #888;
 }
             
 /*Page body and title rendering*/

@@ -81,32 +81,35 @@
 }
 
 body{
-    font-family: "Comic Relief", system-ui;
+  font-family: "Comic Relief", system-ui;
 }
 
 button{
-    font-family: "Comic Relief", system-ui;
+  font-family: "Comic Relief", system-ui;
 }
 
 #wipe{
-    font-family: "Press Start 2P", system-ui;
-    font-size: 15px;
+  font-family: "Press Start 2P", system-ui;
+  font-size: 15px;
 }
 
 h3{
-    font-family: "Rampart One", sans-serif;
-    font-size: 17px;
-    letter-spacing: 3px;
+  font-family: "Rampart One", sans-serif;
+  font-size: 17px;
+  letter-spacing: 3px;
 }
 
 h1{
-    font-family: "Nabla", system-ui;
-    font-size: 40px;
-    letter-spacing: 3px;
+  font-family: "Nabla", system-ui;
+  font-size: 40px;
+  letter-spacing: 3px;
 }
 h2{
-    font-family: "honk", system-ui;
-    letter-spacing: 3px;
+  font-family: "honk", system-ui;
+  letter-spacing: 3px;
+}
+h4{
+  font-family: "Bungee Shade", sans-serif;
 }
 
 #news{
