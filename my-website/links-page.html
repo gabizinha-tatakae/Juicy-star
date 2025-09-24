@@ -27,9 +27,13 @@
             .model{
                 overflow: auto;
                 padding: 0px;
-                width: 23em;
+                width: 20em;
                 height: 15em;
                 outline: 4px ridge rgb(69, 135, 223);
+                flex-grow: 1;
+            }
+            .big{
+                flex-grow: 15;
             }
             body {
                 background-color:rgba(186, 85, 211, 0.1);
@@ -37,9 +41,10 @@
             }
             .links-container{
                 display: flex;
-                align-items: flex-start;
                 gap: 20px;
                 flex-wrap: wrap;
+                
+                justify-content: center;
             }
             a{
                 margin: 6px;
@@ -60,6 +65,19 @@
     </head>
     <body>
         <div class="links-container">
+            
+            <div class="model big">
+                <div class="sticky">
+                    <h4>Sites on the small web</h4><br><br>
+                </div>
+                <a target="_blank" href="https://petrapixel.neocities.org/"><img src="https://cdn.jsdelivr.net/gh/petracoding/petrapixel.neocities.org@latest/public/assets/img/linkback.gif" alt="petrapixel"></a>
+                <a target="_blank" href="https://32bit.cafe"><img src="index/images/buttons/32b-pcb.png"></a>
+                <a target="_blank" href="https://lilithdev.neocities.org/"><img src="https://lilithdev.neocities.org/buttons/lilithdevbtn.gif"></a>
+                <a target="_blank" href="https://doqmeat.com"><img src="index/images/buttons/doqmeat.png"></a>
+                <a target="_blank" href="https://dollarchive.neocities.org"><img src="index/images/buttons/banner.gif"></a>
+                <a target="_blank" href="https://troy-sucks.neocities.org/"><img src="https://troy-sucks.neocities.org/images/troysuckstarry.gif"/>
+            </div>
+
             <div class="model">
                 <div class="sticky">
                     <h4>Interesting/fun sites</h4><br><br>
@@ -103,7 +121,7 @@
 
             <div class="model">
                 <div class="sticky">
-                    <h4>Resources for websites</h4><br><br>
+                    <h4>Resources</h4><br><br>
                 </div>
                 <a target="_blank" href="https://www.webmonkey.com/color-codes/">HTML Color Codes</a><br>
                 <a target="_blank" href="https://catbox.moe/">Catbox</a><br>
