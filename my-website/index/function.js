@@ -1,3 +1,10 @@
+// sound effects
+var clicksound=new Audio();
+clicksound.src='index/sound/clicksound.wav'
+
+var hover=new Audio();
+hover.src='index/sound/hover.wav'
+
 // <![CDATA[
 // all colours must be in format '#NNNNNN', not 'red' or 'rgb(7,8,9)'
 var fgcolour="#FF00FF"; // foreground colour
