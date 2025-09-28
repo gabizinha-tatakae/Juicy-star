@@ -15,6 +15,15 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Comfortaa:wght@300..700&family=Comic+Relief&family=Flavors&family=Honk&family=Nabla&family=Press+Start+2P&family=Rampart+One&family=Ribeye+Marrow&family=Special+Elite&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/fonts/my-fonts.css"/>
+        <script>
+            var cubeclick=new Audio();
+            cubeclick.src='cube-click.wav'
+        </script>
+
+        <script>
+            var cubehover=new Audio();
+            cubehover.src='cube-hover.wav'
+        </script>
         <style>
             body{
                 background:black url(index/images/strbackground.gif);
@@ -48,7 +57,7 @@
             }
             div{
                 display: block;
-                width: 300px;
+                width: 100%;
                 margin: auto;
             }
             #frame1{
@@ -122,7 +131,7 @@
 
         <br><br>
         <main>
-            <a href="home.html">
+            <a href="home.html" onmouseenter="cubehover.play()" onmousedown="cubeclick.play()">
                 <div class="cube-container">
                     <div class="cube">
                         <div class="cube-side"></div>
