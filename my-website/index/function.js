@@ -1,9 +1,9 @@
 // sound effects
 var clicksound=new Audio();
-clicksound.src='index/sound/clicksound.wav'
+clicksound.src='https://files.catbox.moe/cyc0z2.wav'
 
 var hover=new Audio();
-hover.src='index/sound/hover.wav'
+hover.src='https://files.catbox.moe/pnrrh0.wav'
 
 // <![CDATA[
 // all colours must be in format '#NNNNNN', not 'red' or 'rgb(7,8,9)'
