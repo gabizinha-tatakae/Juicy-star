@@ -115,3 +115,7 @@ h4{
 #news{
   font-family: "Comic Relief", system-ui;
 }
+
+.tooltip span, .pagination{
+  font-family: "Comfortaa", system-ui;
+}

@@ -24,14 +24,26 @@
         </div>
         
         <!--Navigation-->
-        <div class="topnav">
+        <div class="topnav" id="navigation">
             <a target="main" href="main.html" onmouseenter="hover.play()" onmousedown="clicksound.play()">Home</a>
             <a href="https://juicy-star.carrd.co" onmouseenter="hover.play()" onmousedown="clicksound.play()">About me</a>
-            <a href="#" onmouseenter="hover.play()" onmousedown="clicksound.play()">My art</a>
+            <a href="art-gallery.html" onmouseenter="hover.play()" onmousedown="clicksound.play()">My art</a>
             <a target="main" href="links-page.html" onmouseenter="hover.play()" onmousedown="clicksound.play()">Cool links</a>
             <a target="main" href="https://juicy-star.bearblog.dev" onmouseenter="hover.play()" onmousedown="clicksound.play()">Blog</a>
             <a href="#" onmouseenter="hover.play()" onmousedown="clicksound.play()">Shrines</a>
+            <a href="javascript:void(0);" class="icon" onclick="collapsenav()">☰</a>
         </div>
+
+        <script>
+            function collapsenav(){
+                var x = document.getElementById("navigation");
+                if(x.className === "topnav"){
+                    x.className += " closed";
+                } else{
+                    x.className = "topnav";
+                }
+            }
+        </script>
         
         <!--Main content-->
         <iframe id="container" class="content" src="main.html" name="main"></iframe>
