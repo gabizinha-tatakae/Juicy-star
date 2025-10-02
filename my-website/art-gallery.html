@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="/fonts/my-fonts.css"/>
         <style>
             body{
-                background-color: black;
+                background: url(illustration/064.GIF);
             }
             .ilust{
                 display: flex;
@@ -31,21 +31,108 @@
                 width: 15em;
                 height: 25em;
                 object-fit: cover;
-                border: 5px double rgb(2, 182, 2);
+                border: 4px double rgb(2, 182, 2);
                 border-radius: 2px;
-                margin: 2px;
                 flex-grow: 1;
                 flex-basis: 10%;
                 transition:all 0.3s ease-in-out;
             }
             img:hover{
-                border: 5px double rgb(194, 255, 188);
+                border: 4px double rgb(194, 255, 188);
                 border-radius: 100px;
                 filter: drop-shadow(0px 0px 10px rgb(124, 255, 91));
+            }
+            .drop{
+                font-size:25px;
+                font-weight: bold;
+                width: 25px;
+                height: 25px;
+                padding: 8.5px 11.5px 19.2px 14px;
+                border-radius: 50%;
+                background-color: rgb(1, 243, 13);
+                color: rgb(185, 255, 175);
+                outline: 2px solid rgb(109, 255, 41);
+                outline-offset: 3px;
+                position: relative;
+                top: 10px;
+                left: 20px;
+                z-index: 2;
+            }
+            .drop:hover{
+                animation: dropdown 0.6s ease 0.2s 1 alternate;
+                animation-fill-mode: forwards;
+            }
+            @keyframes dropdown {
+                from{
+                    transform: rotate(0) scale(1);
+                    outline: 2px solid rgb(127, 248, 70);
+                }
+                to{
+                    transform: rotate(360deg) scale(1.1);
+                    outline: 10px solid rgba(102, 255, 0, 0.5);
+                    border: 2px solid rgb(123, 255, 0);
+                    color: rgb(183, 255, 81);
+                }
+            }
+            .drop-item{
+                position: absolute;
+                left: 26.5px;
+                top: 30px;
+                padding: 50px 12px 12px 12px;
+                width: 25px;
+                font-size: 30px;
+                color: white;
+                background-color: #000000b9;
+                border: 2px solid black;
+                border-radius: 40px;
+                z-index: 1;
+            }
+            .tooltip{
+                position: relative;
+                display: inline-block;
+            }
+            .tooltip a{
+                visibility: hidden;
+                width: 100px;
+                background-color: rgb(0, 0, 0);
+                border: 1px dotted rgb(70, 117, 0);
+                color: greenyellow;
+                text-align: center;
+                font-size: 15px;
+                padding: 3px 0px;
+                border-radius: 4px;
+                position: absolute;
+                z-index: 1;
+                left: 30px;
+                top: 1px;
+                opacity: 0;
+                transition: opacity 0.3s;
+            }
+            .tooltip:hover a{
+                visibility: visible;
+                opacity: 1;
+            }
+            .tooltip span:hover{
+                color: rgb(60, 255, 102);
+                transition: all 0.3s;
+                text-shadow: 0px 0px 4px rgb(17, 167, 37);
+            }
+            .tooltip span:active{
+                font-size: smaller;
+                color: rgb(31, 138, 54);
             }
         </style>
     </head>
     <body>
+        
+        <div class="drodown">
+            <div class="drop">☰</div>
+            <div class="drop-item">
+                <div class="tooltip"><span>⚝</span><a>Illustration</a></div>
+                <div class="tooltip"><span>☘</span><a>Sketches</a></div>
+            </div>
+        </div>
+        
         <div class="ilust">
             <img src="illustration/some-girl.jpg">
             <img src="illustration/badass.jpg">
@@ -54,8 +141,8 @@
             <img src="illustration/griffith.jpg">
             <img src="illustration/color-theory-practice.jpg">
             <img src="illustration/green.jpg">
-            <img src="illustration/">
-            <img src="illustration/">
+            <img src="illustration/red.jpg">
+            <img src="illustration/samurai.jpg">
         </div>
     </body>
 </html>
