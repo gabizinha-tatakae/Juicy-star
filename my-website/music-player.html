@@ -7,11 +7,11 @@
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   <style>
-    body {
-      cursor: url('http://www.rw-designer.com/cursor-extern.php?id=111111, auto') 0 0, auto;
+    body, .seek_slider {
+      cursor: url('http://www.rw-designer.com/cursor-extern.php?id=111111') 0 0, auto;
     }
-    button{
-      cursor: url('http://www.rw-designer.com/cursor-extern.php?id=111125, auto') 0 0, auto;
+    button, .seek_slider::-webkit-slider-thumb{
+      cursor: url('http://www.rw-designer.com/cursor-extern.php?id=111125') 0 0, auto;
     }
     .player {
       width:fit-content;
@@ -41,7 +41,6 @@
       width: 8px;
       height: 8px;
       background: white;
-      cursor: pointer;
       border-radius: 50%;
       border:1px solid #cecece;
       padding-top:3px;
@@ -83,13 +82,11 @@
     input[type=range]::-webkit-slider-runnable-track {
         width: 100%;
         height: 2px; /* thickness of seeking track */
-        cursor: pointer;
     }
     /* settings for firefox browsers */
     input[type=range]::-moz-range-track {
         width: 100%;
         height: 2px; /* thickness of seeking track */
-        cursor: pointer;
     }
     .flex {display: flex;}
     #musicplayer {
@@ -149,7 +146,6 @@
         opacity: 0.6;
         font-size: 14px;
         padding: 2px;
-        cursor: pointer;
     }
     .wheelcontrols button:hover {
       opacity: 1;
